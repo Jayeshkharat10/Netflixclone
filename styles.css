@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the header */
+.header {
+    background-color: #111;
+    color: white;
+    padding: 1rem 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styles for the hero section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #e50914;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Styles for the featured section */
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.card {
+    width: 250px;
+    margin: 1rem;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
